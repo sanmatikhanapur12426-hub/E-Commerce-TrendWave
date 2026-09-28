@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrendWave | Modern Contemporary Street Luxury & Lifestyle</title>
+  <meta name="description" content="Discover TrendWave - Premium contemporary apparel, heavyweight streetwear, weatherproof outerwear, and minimalist accessories engineered for the modern era.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" id="announcementBar">
+    <p>
+      <i class="fas fa-bolt" style="color: #fbbf24; margin-right: 0.35rem;"></i>
+      Free Worldwide Express Shipping on orders over $150 
+      <span class="badge-promo">CODE: TREND20 FOR 20% OFF</span>
+    </p>
+    <button class="announcement-close" id="announcementClose" aria-label="Close Announcement">&times;</button>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo">
+          <div class="brand-icon">
+            <i class="fas fa-wave-square"></i>
+          </div>
+          <span class="brand-text">Trend<span class="wave">Wave</span></span>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav class="main-nav">
+          <a href="#catalog" class="nav-link active">New Drops</a>
+          <a href="#catalog" class="nav-link" onclick="filterByCategory('streetwear')">Streetwear</a>
+          <a href="#catalog" class="nav-link" onclick="filterByCategory('outerwear')">Outerwear</a>
+          <a href="#catalog" class="nav-link" onclick="filterByCategory('footwear')">Footwear</a>
+          <a href="#catalog" class="nav-link" onclick="filterByCategory('tech')">Tech Gear</a>
+          <a href="#lookbook" class="nav-link">Lookbook</a>
+        </nav>
+
+        <!-- Header Actions & Utilities -->
+        <div class="header-actions">
+          
+          <!-- Search Shortcut -->
+          <a href="#catalog" class="action-btn" title="Search Garments" onclick="document.getElementById('productSearchInput').focus()">
+            <i class="fas fa-search"></i>
+          </a>
+
+          <!-- Wishlist Trigger -->
+          <button class="action-btn wishlist-toggle-trigger" title="View Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="action-badge wishlist-count-badge">0</span>
+          </button>
+
+          <!-- Shopping Cart Trigger -->
+          <button class="cart-toggle-btn cart-toggle-trigger" aria-label="View Shopping Bag">
+            <i class="fas fa-shopping-bag"></i>
+            <span>Bag</span>
+            <span class="cart-toggle-badge cart-count-badge">0</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button class="action-btn menu-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <div class="hero-content">
+            <div class="hero-tag">
+              <span class="dot"></span>
+              Autumn / Winter '26 Collection
+            </div>
+            
+            <h1 class="hero-title">
+              Redefining <em>Modern</em> Street Luxury
+            </h1>
+            
+            <p class="hero-desc">
+              Engineered silhouettes, custom heavyweight organic textiles, and modular architectural precision. TrendWave builds modern garments crafted to withstand both the elements and time.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#catalog" class="btn-primary">
+                <span>Explore Collection</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#lookbook" class="btn-secondary">
+                <i class="fas fa-film"></i>
+                <span>Autumn Lookbook</span>
+              </a>
+            </div>
+
+            <!-- Social Proof -->
+            <div class="hero-proof">
+              <div class="avatars-cluster">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Customer Avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Customer Avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Customer Avatar">
+                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=120&q=80" alt="Customer Avatar">
+              </div>
+              <div class="proof-text">
+                <strong>45,000+ Creators Worldwide</strong>
+                <div>Rated 4.9/5 from verified luxury buyers</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Visual Feature Montage -->
+          <div class="hero-visual">
+            <div class="hero-card-main">
+              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="TrendWave Modern Editorial Silhouette">
+              
+              <!-- Floating Micro-Card 1 -->
+              <div class="floating-pill top-right">
+                <div class="pill-content">
+                  <div class="pill-icon">
+                    <i class="fas fa-certificate" style="color: #16a34a;"></i>
+                  </div>
+                  <div>
+                    <div class="pill-title">Custom 480 GSM Cotton</div>
+                    <div class="pill-sub">Zero-shrink organic weave</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Micro-Card 2 -->
+              <div class="floating-pill bottom-left">
+                <div class="pill-content">
+                  <div class="pill-icon">
+                    <i class="fas fa-truck-fast" style="color: #2563eb;"></i>
+                  </div>
+                  <div>
+                    <div class="pill-title">Express Worldwide</div>
+                    <div class="pill-sub">Tracked 48-Hour Dispatch</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Propositions / Brand Features Strip -->
+    <section class="features-strip">
+      <div class="container">
+        <div class="features-grid">
+          
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fas fa-box-open"></i>
+            </div>
+            <div class="feature-info">
+              <h4>Express Logistics</h4>
+              <p>Complimentary tracked delivery on orders above $150.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="feature-info">
+              <h4>Conscious Craft</h4>
+              <p>GOTS certified organic cotton & recycled technical fabrics.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fas fa-rotate-left"></i>
+            </div>
+            <div class="feature-info">
+              <h4>30-Day Risk-Free</h4>
+              <p>Simple return portal with instant prepaid return labels.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon-wrap">
+              <i class="fas fa-shield-halved"></i>
+            </div>
+            <div class="feature-info">
+              <h4>Encrypted Security</h4>
+              <p>256-bit bank grade encryption with Apple & Google Pay.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bento Grid Category Showcase -->
+    <section class="collections-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <span class="section-label">Curated Capsules</span>
+            <h2 class="section-title">Explore Core Categories</h2>
+          </div>
+          <a href="#catalog" class="section-link">
+            <span>View Full Catalog</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento 1: Large Streetwear -->
+          <div class="bento-card col-8" onclick="filterByCategory('streetwear')">
+            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=1200&q=80" alt="Streetwear Collection">
+            <div class="bento-overlay">
+              <span class="bento-subtitle">Iconic Staples</span>
+              <h3 class="bento-title">Heavyweight Streetwear & Boxy Silhouettes</h3>
+              <span class="bento-link">Shop Streetwear <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- Bento 2: Weatherproof Outerwear -->
+          <div class="bento-card col-4" onclick="filterByCategory('outerwear')">
+            <img src="https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&w=800&q=80" alt="Technical Shells">
+            <div class="bento-overlay">
+              <span class="bento-subtitle">All-Weather</span>
+              <h3 class="bento-title">Technical Shells</h3>
+              <span class="bento-link">Explore Outerwear <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- Bento 3: Minimalist Tech & Watches -->
+          <div class="bento-card col-4" onclick="filterByCategory('tech')">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Lifestyle Tech">
+            <div class="bento-overlay">
+              <span class="bento-subtitle">Precision EDC</span>
+              <h3 class="bento-title">Titanium Horology & Tech</h3>
+              <span class="bento-link">Discover Tech <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+          <!-- Bento 4: Footwear & Runners -->
+          <div class="bento-card col-8" onclick="filterByCategory('footwear')">
+            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80" alt="Contemporary Footwear">
+            <div class="bento-overlay">
+              <span class="bento-subtitle">Engineered Comfort</span>
+              <h3 class="bento-title">Supercritical Foam Runners & Footwear</h3>
+              <span class="bento-link">Shop Footwear <i class="fas fa-arrow-right"></i></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <span class="section-label">TrendWave Storefront</span>
+            <h2 class="section-title">New Drops & Essential Pieces</h2>
+          </div>
+        </div>
+
+        <!-- Controls: Category Filters, Search, Sort -->
+        <div class="catalog-controls">
+          
+          <div class="filter-categories">
+            <button class="filter-btn active" data-category="all">All Drops</button>
+            <button class="filter-btn" data-category="streetwear">Streetwear</button>
+            <button class="filter-btn" data-category="outerwear">Outerwear</button>
+            <button class="filter-btn" data-category="footwear">Footwear</button>
+            <button class="filter-btn" data-category="accessories">Accessories</button>
+            <button class="filter-btn" data-category="tech">Tech Gear</button>
+          </div>
+
+          <div class="catalog-actions-right">
+            
+            <div class="search-box-wrap">
+              <i class="fas fa-search search-icon"></i>
+              <input type="text" id="productSearchInput" placeholder="Search garments, shoes..." />
+            </div>
+
+            <div class="sort-select-wrap">
+              <select id="productSortSelect" aria-label="Sort Products">
+                <option value="featured">Featured Drops</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Customer Rating</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Dynamic Product Cards Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Populated dynamically via app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Editorial Lookbook Section with Hotspots -->
+    <section class="lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="lookbook-container">
+          
+          <div class="lookbook-visual">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" alt="TrendWave Editorial Lookbook">
+            
+            <!-- Hotspot 1 -->
+            <div class="hotspot-pin" style="top: 32%; left: 45%;" data-product-id="1">
+              <span>+</span>
+              <div class="hotspot-card-preview" style="top: 35px; left: -80px;">
+                <div style="font-weight: 700; font-size: 0.8rem; color: #111;">Heavyweight Boxy Hoodie</div>
+                <div style="color: #555; font-size: 0.75rem;">$125 &bull; Tap to inspect</div>
+              </div>
+            </div>
+
+            <!-- Hotspot 2 -->
+            <div class="hotspot-pin" style="top: 68%; left: 52%;" data-product-id="5">
+              <span>+</span>
+              <div class="hotspot-card-preview" style="top: -65px; left: -80px;">
+                <div style="font-weight: 700; font-size: 0.8rem; color: #111;">Tailored Relaxed Trouser</div>
+                <div style="color: #555; font-size: 0.75rem;">$145 &bull; Tap to inspect</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="lookbook-content">
+            <span class="editorial-tag">TrendWave Design Philosophy</span>
+            <h2>Form Follows Motion. Silence Speaks Luxury.</h2>
+            <p>
+              We discard fleeting trends in favor of structural integrity and tactile nuance. Our design studio merges architectural proportions with proprietary Japanese weaves, creating pieces that move seamlessly with modern urban lifestyle.
+            </p>
+
+            <div class="lookbook-highlights">
+              <div class="highlight-item">
+                <h4>Custom 480 GSM French Terry</h4>
+                <p>Milled exclusively in Portugal with zero synthetic fillers.</p>
+              </div>
+              <div class="highlight-item">
+                <h4>Zero-Waste Patternmaking</h4>
+                <p>Engineered cuts reducing textile production scrap by 34%.</p>
+              </div>
+            </div>
+
+            <button class="btn-primary" onclick="openQuickView(1)">
+              <i class="fas fa-eye"></i> Shop Featured Look
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Customer Reviews Section -->
+    <section class="reviews-section">
+      <div class="container">
+        
+        <div class="section-header" style="text-align: center; flex-direction: column; align-items: center; justify-content: center;">
+          <span class="section-label">Verified Experience</span>
+          <h2 class="section-title">Endorsed by Discerning Creators</h2>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-quote">
+                "The weight and drape of the Boxy Hoodie is unlike anything from traditional high-street labels. The double-layered hood holds its shape perfectly. TrendWave is now my go-to brand."
+              </p>
+            </div>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Marcus V.">
+              <div class="reviewer-info">
+                <h5>Marcus Vance <i class="fas fa-badge-check badge-verified"></i></h5>
+                <span>Verified Buyer &bull; New York</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-quote">
+                "Wore the AeroShield Shell through three days of continuous Tokyo rain. Completely dry, zero moisture leakage, and the magnetic storm flaps are pure engineering satisfaction."
+              </p>
+            </div>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Liam K.">
+              <div class="reviewer-info">
+                <h5>Liam Takahashi <i class="fas fa-badge-check badge-verified"></i></h5>
+                <span>Verified Buyer &bull; Tokyo</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <p class="review-quote">
+                "The WavePulse Runners are easily the most comfortable daily sneakers I own. Ultra-light, breathable, and the minimal off-white colorway matches every tailored fit in my wardrobe."
+              </p>
+            </div>
+            <div class="reviewer-meta">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80" alt="Elena R.">
+              <div class="reviewer-info">
+                <h5>Elena Rostova <i class="fas fa-badge-check badge-verified"></i></h5>
+                <span>Verified Buyer &bull; London</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VIP Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <span class="newsletter-tag">Private Access</span>
+          <h2 class="newsletter-title">Join the TrendWave Insiders</h2>
+          <p class="newsletter-subtitle">
+            Receive private release invitations, secret drop access, and an instant 20% off coupon code applied to your first purchase.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address..." required>
+            <button type="submit">Unlock 20% Off</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <a href="#hero" class="brand-logo">
+            <div class="brand-icon">
+              <i class="fas fa-wave-square"></i>
+            </div>
+            <span class="brand-text">Trend<span class="wave">Wave</span></span>
+          </a>
+          <p>
+            Contemporary luxury apparel, functional technical outerwear, and engineered lifestyle accessories designed for the modern progressive aesthetic.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#catalog" onclick="filterByCategory('streetwear')">Heavyweight Streetwear</a></li>
+            <li><a href="#catalog" onclick="filterByCategory('outerwear')">Technical Weatherproof Shells</a></li>
+            <li><a href="#catalog" onclick="filterByCategory('footwear')">Supercritical Runners</a></li>
+            <li><a href="#catalog" onclick="filterByCategory('tech')">Titanium Horology & EDC</a></li>
+            <li><a href="#lookbook">Autumn/Winter '26 Lookbook</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Client Services</h4>
+          <ul>
+            <li><a href="#" onclick="showToast('Dispatch Portal: Orders process within 24-48 business hours.'); return false;">Order Tracking</a></li>
+            <li><a href="#" onclick="showToast('Returns: 30-day risk-free returns policy.'); return false;">Returns & Exchanges</a></li>
+            <li><a href="#" onclick="showToast('Worldwide Express: Free on orders over $150.'); return false;">Shipping Information</a></li>
+            <li><a href="#" onclick="showToast('Fit Guide: All garments follow modern architectural oversized cut.'); return false;">Size & Fit Guide</a></li>
+            <li><a href="#" onclick="showToast('Support: contact@trendwave-studio.com'); return false;">Concierge Support</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Brand Ethos</h4>
+          <ul>
+            <li><a href="#hero">Our Story</a></li>
+            <li><a href="#" onclick="showToast('100% GOTS certified organic cotton used.'); return false;">Sustainable Practices</a></li>
+            <li><a href="#" onclick="showToast('Zero-waste cutting patterns active across 2026 drops.'); return false;">Material Innovation</a></li>
+            <li><a href="#" onclick="showToast('Stores: Tokyo, London, New York Flagships.'); return false;">Flagship Locations</a></li>
+            <li><a href="#" onclick="showToast('Press inquiries: press@trendwave-studio.com'); return false;">Press & Media Kit</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 TrendWave Studio Inc. All rights reserved. Crafted with precision.
+        </div>
+        <div class="payment-badges">
+          <span class="payment-pill"><i class="fab fa-cc-visa"></i> VISA</span>
+          <span class="payment-pill"><i class="fab fa-cc-mastercard"></i> MASTERCARD</span>
+          <span class="payment-pill"><i class="fab fa-cc-amex"></i> AMEX</span>
+          <span class="payment-pill"><i class="fab fa-apple-pay"></i> APPLE PAY</span>
+          <span class="payment-pill"><i class="fab fa-google-pay"></i> G PAY</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-over Cart Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Bag Drawer">
+    
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <i class="fas fa-shopping-bag"></i>
+        <span>Shopping Bag</span>
+        <span class="cart-toggle-badge cart-count-badge" style="background-color: var(--bg-subtle); color: var(--brand-black);">0</span>
+      </div>
+      <button class="drawer-close" id="cartCloseBtn" aria-label="Close Bag">&times;</button>
+    </div>
+
+    <!-- Free Shipping Indicator -->
+    <div class="shipping-meter">
+      <div class="meter-text" id="freeShippingText">Free Worldwide Shipping on orders over <strong>$150</strong></div>
+      <div class="meter-bar">
+        <div class="meter-fill" id="freeShippingMeter"></div>
+      </div>
+    </div>
+
+    <!-- Scrollable Items List -->
+    <div class="cart-items-list" id="cartItemsContainer">
+      <!-- Populated via app.js -->
+    </div>
+
+    <!-- Drawer Summary & Checkout -->
+    <div class="drawer-footer">
+      
+      <!-- Promo Code Input -->
+      <div class="promo-input-wrap">
+        <input type="text" id="promoInput" placeholder="Promo code (e.g. TREND20)" />
+        <button id="promoApplyBtn">Apply</button>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Estimated Express Shipping</span>
+        <span id="cartShipping">FREE</span>
+      </div>
+
+      <div class="cart-summary-line" id="cartDiscountRow" style="display: none; color: #16a34a; font-weight: 700;">
+        <span>Promo Discount</span>
+        <span id="cartDiscountAmount">-$0.00</span>
+      </div>
+
+      <div class="cart-summary-line total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+
+      <button class="btn-checkout" id="checkoutTriggerBtn">
+        <span>Proceed to Secure Checkout</span>
+        <i class="fas fa-arrow-right"></i>
+      </button>
+
+    </div>
+
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="quickview-card" id="quickViewModal">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Preview">&times;</button>
+      <div id="modalContentArea" style="display: contents;">
+        <!-- Dynamic content injected by app.js -->
+      </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-card" id="checkoutModal" style="display: none;">
+      <button class="modal-close-btn" id="checkoutCloseBtn" aria-label="Close Checkout">&times;</button>
+      
+      <div class="checkout-header">
+        <span class="modal-tag">Express Encrypted Checkout</span>
+        <h3>Order Details & Shipping</h3>
+      </div>
+
+      <form id="checkoutForm">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" placeholder="Alexander" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Cole" required>
+          </div>
+        </div>
+
+        <div class="form-grid full">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="alexander@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-grid full">
+          <div class="form-group">
+            <label>Delivery Address</label>
+            <input type="text" placeholder="742 Evergreen Terrace, Suite 402" required>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" placeholder="San Francisco" required>
+          </div>
+          <div class="form-group">
+            <label>Postal Code</label>
+            <input type="text" placeholder="94107" required>
+          </div>
+        </div>
+
+        <div class="form-grid full">
+          <div class="form-group">
+            <label>Payment Method (Simulated)</label>
+            <div style="display: flex; gap: 0.5rem; margin-top: 0.25rem;">
+              <label style="border: 1px solid var(--border-medium); padding: 0.6rem 1rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; cursor: pointer; flex: 1;">
+                <input type="radio" name="paymentMethod" checked> <i class="fas fa-credit-card"></i> Card
+              </label>
+              <label style="border: 1px solid var(--border-medium); padding: 0.6rem 1rem; border-radius: var(--radius-sm); display: flex; align-items: center; gap: 0.5rem; cursor: pointer; flex: 1;">
+                <input type="radio" name="paymentMethod"> <i class="fab fa-apple-pay"></i> Apple Pay
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin: 1.5rem 0 1rem; padding-top: 1rem; border-top: 1px dashed var(--border-medium);">
+          <span style="font-weight: 700;">Final Amount:</span>
+          <span id="checkoutSummaryTotal" style="font-size: 1.35rem; font-weight: 800; color: var(--brand-black);">$0.00</span>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%;">
+          <i class="fas fa-lock"></i> Authorize & Place Order
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Application Script -->
+  <script src="app.js"></script>
+  <script>
+    // Quick helper for navigation category filtering
+    function filterByCategory(cat) {
+      const btn = document.querySelector(`.filter-btn[data-category="${cat}"]`);
+      if (btn) {
+        btn.click();
+      } else {
+        state.filterCategory = cat;
+        renderProducts();
+      }
+      const catalogEl = document.getElementById('catalog');
+      if (catalogEl) catalogEl.scrollIntoView({ behavior: 'smooth' });
+    }
+    
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    if (mobileBtn) {
+      mobileBtn.onclick = function() {
+        const nav = document.querySelector('.main-nav');
+        if (nav.style.display === 'flex') {
+          nav.style.display = 'none';
+        } else {
+          nav.style.display = 'flex';
+          nav.style.flexDirection = 'column';
+          nav.style.position = 'absolute';
+          nav.style.top = '100%';
+          nav.style.left = '0';
+          nav.style.right = '0';
+          nav.style.backgroundColor = '#ffffff';
+          nav.style.padding = '1.5rem';
+          nav.style.borderBottom = '1px solid #e2e8f0';
+          nav.style.boxShadow = '0 10px 25px rgba(0,0,0,0.08)';
+        }
+      };
+    }
+  </script>
+</body>
+</html>
